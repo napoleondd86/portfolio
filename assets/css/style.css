@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-image: url("assets/images/008_sombrero_galaxy-1024x574.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100vh;
+  display: block;
+  width: 100%; 
+  height: 100vh;
+}
