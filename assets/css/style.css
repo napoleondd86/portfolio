@@ -2,13 +2,76 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-header {
-  background-image: url("assets/images/008_sombrero_galaxy-1024x574.jpg");
+/* declare variables */
+:root {
+--dark: #041014;
+--dark-blue: #145369;
+}
+
+
+#viewport {
+  background-image: url("http://www.rocketstem.org/wp-content/uploads/2015/04/008_sombrero_galaxy.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100vh;
-  display: block;
-  width: 100%; 
+  display: flex;
   height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+nav ul{
+  display: flex;
+  flex-direction: row;
+  
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 3rem;
+  color: var(--dark);
+}
+
+.nav-link {
+  display: flex;  /*some reason this takes off bullets*/
+  margin: 10px;
+  background-color: var(--dark);
+  border-radius: 20px;
+  padding: 5px;
+  text-decoration: none;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* text-align: center; */
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--dark-blue);
+}
+
+#profile-pic {
+  height: 200px;
+  width: 120px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  
+}
+
+#about-me {
+  background-color: var(--dark);
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
 }
