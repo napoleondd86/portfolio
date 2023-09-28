@@ -23,7 +23,7 @@ body {
 }*/
 
 #viewport {
-  background-image: url("../images/008_sombrero_galaxy-1024x574.jpg");
+  background-image: url("../images/tengyart-PmnCG7_2Sc4-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100vh;
   display: flex;
@@ -79,6 +79,11 @@ a:hover {
   flex-direction: column;
 }
 
+#projects h2{
+  display: flex;
+  background-color: var(--dark-blue);
+  justify-content: center;
+}
 .project-card {
   border: solid 1px black;
   padding: 20px;
@@ -105,21 +110,37 @@ ul.project {
   height: 200px;
   width: 120px;
   margin-bottom: 10px;
-  border-radius: 20px;
+  border: var(--dark) solid 2px;
   
 }
 
 #about-me {
-  background-color: var(--dark);
+  background-color: var(--dark-blue);
   /* background-size: cover; */
   color: white;
   padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
+.about-me {
+  display: flex;
+  text-align: center;
+  flex-flow: row wrap;
+  max-width: 600px;
+  border: #041014 solid 2px;
+  padding: 10px;
+  border-radius: 5px;
+  color: black;
+}
+h2 {
+  border: var(--dark) solid 2px;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 5px;
+  color: black;
+}
 li#horiseon {
   flex: 1 0 100%;
 }
@@ -128,7 +149,8 @@ li#horiseon {
   background-size: 100%;
   background-repeat: no-repeat;
   color: white;
-}
+  }
+
 #taco {
   background-image: url(../images/food.jpg);
   background-size: cover;
@@ -145,15 +167,39 @@ li#horiseon {
   background-image: url(../images/web-services.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  color: white;
+  /* color: white; */
+  flex: 1 0 100%;
 }
 #indian-moto {
   background-image: url(../images/moto-adventure.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  color: white;
+  /* color: white; */
 }
 
+#contact {
+  background-color: var(--dark-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+
+ul {
+    list-style-type: none;
+}
+ul.contact {
+  padding: 20px;
+  display: flex;
+}
+  
+ul.contact li {
+  padding: 10px;
+}
+
+.contact li a:hover,
+.project .project-card:hover{
+  color: var(--dark-blue);
+}
 /* sizing of image within a div */
 /* div {
   width: 350px;
