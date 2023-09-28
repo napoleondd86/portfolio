@@ -11,17 +11,26 @@
 --dark-blue: #145369;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+}
+/* main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 960px; 
+}*/
 
 #viewport {
-  background-image: url("http://www.rocketstem.org/wp-content/uploads/2015/04/008_sombrero_galaxy.jpg");
+  background-image: url("../images/008_sombrero_galaxy-1024x574.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100vh;
   display: flex;
   height: 100vh;
-  flex-direction: column;
+  flex-flow: column wrap;
   align-items: center;
   justify-content: center;
-
 }
 
 nav ul{
@@ -57,6 +66,41 @@ a:hover {
   color: var(--dark-blue);
 }
 
+/* this is the whole box that contains all of the cards */
+#projects {
+  padding: 30px;
+  /* margin auto centers horizontally in box */
+  margin: auto; 
+  width: 100%;
+  /* max-width: 960px; */
+  display: flex;
+  background-color: white;
+  border: solid 1px black;
+  flex-direction: column;
+}
+
+.project-card {
+  border: solid 1px black;
+  padding: 20px;
+  flex: 1 0 0;
+  min-height: 300px;
+  min-width: 300px;
+  margin: 20px;
+}
+
+.project-card:hover {
+  border:  solid 2px var(--dark-blue);
+}
+
+ul.project {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* flex: 1 0 300px; */
+
+}
+
 #profile-pic {
   height: 200px;
   width: 120px;
@@ -67,11 +111,59 @@ a:hover {
 
 #about-me {
   background-color: var(--dark);
+  /* background-size: cover; */
   color: white;
   padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
-
 }
+
+li#horiseon {
+  flex: 1 0 100%;
+}
+#space {
+  background-image: url(../images/010_crab_nebula-1024x1024.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: white;
+}
+#taco {
+  background-image: url(../images/food.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+#brewery {
+  background-image: url(../images/beer.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+#horiseon {
+  background-image: url(../images/web-services.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+#indian-moto {
+  background-image: url(../images/moto-adventure.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+/* sizing of image within a div */
+/* div {
+  width: 350px;
+  height: 250px; 
+  border: 1px solid black;
+  background-image: url("./sample.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
