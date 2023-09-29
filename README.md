@@ -26,6 +26,8 @@
 * https://portfolio-n4sn.vercel.app/#about
 * https://www.adamalston.com/
 
+![Preview Screenshot](./assets/images/preview-screenshot-portfolio.png)
+
 
 ## Image credits
 Photo by <a href="https://unsplash.com/@jeremythomasphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jeremy Thomas</a> on <a href="https://unsplash.com/photos/E0AHdsENmDg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
