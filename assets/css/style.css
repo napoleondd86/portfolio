@@ -7,7 +7,7 @@
 
 /* declare variables */
 :root {
---dark: #041014;
+--dark: #03232d7c;
 --dark-blue: #145369;
 }
 
@@ -15,12 +15,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-/* main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 960px; 
-}*/
+
 
 #viewport {
   background-image: url("../images/tengyart-PmnCG7_2Sc4-unsplash.jpg");
@@ -35,26 +30,29 @@ body {
 
 nav ul{
   display: flex;
-  flex-direction: row;
-  
+  flex-flow: row wrap;
+  justify-content: center;  
 }
 
 h1 {
   margin-bottom: 20px;
   font-size: 3rem;
-  color: var(--dark);
+  color: #09151f;
+  border: var(--dark) solid 2px;
+  background-color: var(--dark);
+  border-radius: 5px;
 }
+
 
 .nav-link {
   display: flex;  /*some reason this takes off bullets*/
   margin: 10px;
   background-color: var(--dark);
-  border-radius: 20px;
-  padding: 5px;
+  border-radius: 5px;
+  padding: 10px;
   text-decoration: none;
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* text-align: center; */
+  justify-content: center;
+
 }
 
 a {
@@ -63,7 +61,8 @@ a {
 }
 
 a:hover {
-  color: var(--dark-blue);
+  color: #09151f;
+  border: #09151f solid 1px;
 }
 
 /* this is the whole box that contains all of the cards */
@@ -72,10 +71,9 @@ a:hover {
   /* margin auto centers horizontally in box */
   margin: auto; 
   width: 100%;
-  /* max-width: 960px; */
   display: flex;
   background-color: white;
-  border: solid 1px black;
+  border: solid 2px #072029;
   flex-direction: column;
 }
 
@@ -84,8 +82,8 @@ a:hover {
   background-color: var(--dark-blue);
   justify-content: center;
 }
-.project-card {
-  border: solid 1px black;
+.project a {
+  border: solid 2px #072029;
   padding: 20px;
   flex: 1 0 0;
   min-height: 300px;
@@ -93,8 +91,8 @@ a:hover {
   margin: 20px;
 }
 
-.project-card:hover {
-  border:  solid 2px var(--dark-blue);
+.project a:hover {
+  border:  solid 4px #072029;
 }
 
 ul.project {
@@ -111,6 +109,7 @@ ul.project {
   width: 120px;
   margin-bottom: 10px;
   border: var(--dark) solid 2px;
+  border-radius: 5px;
   
 }
 
@@ -129,17 +128,17 @@ ul.project {
   text-align: center;
   flex-flow: row wrap;
   max-width: 600px;
-  border: #041014 solid 2px;
+  border: #072029 solid 2px;
   padding: 10px;
   border-radius: 5px;
-  color: black;
+  color: #041014;
 }
 h2 {
   border: var(--dark) solid 2px;
   padding: 5px;
   margin: 10px;
   border-radius: 5px;
-  color: black;
+  color: #041014;
 }
 li#horiseon {
   flex: 1 0 100%;
@@ -148,33 +147,28 @@ li#horiseon {
   background-image: url(../images/010_crab_nebula-1024x1024.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
-  color: white;
-  }
+}
 
 #taco {
   background-image: url(../images/food.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  color: white;
 }
 #brewery {
   background-image: url(../images/beer.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  color: white;
 }
 #horiseon {
   background-image: url(../images/web-services.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  /* color: white; */
   flex: 1 0 100%;
 }
 #indian-moto {
   background-image: url(../images/moto-adventure.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  /* color: white; */
 }
 
 #contact {
@@ -196,10 +190,18 @@ ul.contact li {
   padding: 10px;
 }
 
-.contact li a:hover,
+.contact li a {
+  border: var(--dark) solid 2px;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: var(--dark);
+}
+.contact li a:hover, 
 .project .project-card:hover{
   color: var(--dark-blue);
 }
+
+
 /* sizing of image within a div */
 /* div {
   width: 350px;
